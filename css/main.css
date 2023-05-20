@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+body{
+    background-color: #f0f0f2;
+}
+.street {
+    height: 100vh;
+    background-image: url(../imgs/istockphoto-1042084638-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.car svg {
+    font-size: 150px;
+    margin-left: 50px;
+    color: white;
+}
+.my-div {
+    position: absolute;
+    bottom:0 ;
+    margin-bottom: 80px;
+}
+.move {
+    animation: move 15s infinite;
+}
+
+@keyframes move {
+    from {left: 0;}
+    to {left: 100%;}
+}
+.start ,
+.stop{
+    margin: 50px;
+    padding:10px 20px;
+    background-color:#101e38 ;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.stop  {
+    background-color:#a01010 ;
+}
+button:hover {
+    background-color:#838383 ;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* traffic-light */
+
+.traffic-light {
+    width: 100px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+#timer {
+    margin-top: 50px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: white;
+}
+.display-none {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+a:hover{
+    color: #000;
+}
+.my-btn {
+    background-color:#e75a0d;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.my-btn:hover {
+    background-color:#7ec5d4;
+}
